@@ -15,14 +15,16 @@ class Formatter {
     let result =[];
     
     let words = string.split(' ');
-    for (let i = 0; i < words.length; i++ ) {
+    for (let i = 0; i < words.length; i++) {
       if (i === 0) {
         result.push(this.capitalize(words[i]))
-      } else {
-        if (exceptions.includes(words[i])) {
+      } 
+      else {
+        if (exceptions.includes(words[i])){
           result.push(words[i])
-        } else {
-          result.push(this.capitalize(words[i]))
+        } 
+      else {
+        result.push(this.capitalize(words[i]))
         }
       }
     }

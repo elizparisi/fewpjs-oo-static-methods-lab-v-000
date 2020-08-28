@@ -12,9 +12,9 @@ class Formatter {
   static titleize(string){
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     }
-    result = [];
+    let result = [];
     
-    let string.split(" ").forEach(function(w) {
+    let words = string.split(" ").forEach(function(w) {
         result.push(_titleizeWord(w));
     });
     return result.join(" ");

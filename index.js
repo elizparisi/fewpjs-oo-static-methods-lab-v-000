@@ -10,11 +10,11 @@ class Formatter {
   }
   
   static titleize(string){
-    let exceptions = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ];
+    let exceptions = ['the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'];
 
     let result =[];
     
-    let words = sentence.split(' ');
+    let words = string.split(' ');
     for (let i = 0; i < words.length; i++ ) {
       if (i === 0) {
         result.push(this.capitalize(words[i]))

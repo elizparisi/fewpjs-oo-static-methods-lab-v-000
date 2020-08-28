@@ -13,7 +13,7 @@ class Formatter {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
     }
     result = [];
-    
+    s
     string.split(" ").forEach(function(w) {
         result.push(_titleizeWord(w));
     });

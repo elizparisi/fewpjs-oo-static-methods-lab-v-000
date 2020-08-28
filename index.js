@@ -14,7 +14,7 @@ class Formatter {
     }
     result = [];
     
-    sentence.split(" ").forEach(function(w) {
+    string.split(" ").forEach(function(w) {
         result.push(_titleizeWord(w));
     });
     return result.join(" ");
